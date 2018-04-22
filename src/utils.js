@@ -3,6 +3,9 @@ var Utils = {
     getRandomInt (min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     },
+    getRandomIntArray (ranges) {
+        return Math.floor(Math.random() * (ranges[1] - ranges[0] + 1)) + ranges[0];
+    },
     getRandomFloat (min, max) {
         return Math.random() * (max - min) + min;
     },
@@ -54,6 +57,18 @@ var Utils = {
             return true;
         }
         return false;
+    },
+    findNearest (target, array) {
+        let nearestDistance = 999999;
+        let nearestObject = null;
+        array.forEach((element) => {
+            let distance = this.getDistanceBetween(target.x, target.y, element.getPositionCenter().x, element.getPositionCenter().y);
+            if (distance < nearestDistance) {
+                nearestDistance = distance;
+                nearestObject = element;
+            }
+        });
+        return nearestObject;
     }
 
 };
