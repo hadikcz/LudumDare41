@@ -8,55 +8,50 @@ This game was develop only for 48 hours into game jam Ludum Dare (compo) https:/
 ![Image of game](https://raw.githubusercontent.com/hadikcz/LudumDare39_Last_survivor/master/preview.gif)
 
 # About game:
-My third LD entry. Your task is simple, survive as long as possible. But environment in this game is'nt much friendly. You must eat for hinder hunger, heat yourself for prevent freeze in cold night, and lastly defend yourself before zombies, who are wake up at night. Peace time (day) is limited, every day you must prepare for night, make some supplies for next deadly night.
+My Second LD entry. Your task is simple, drive metro train and keep schedule. Just drive metro, stop at station, open doors and wait. And repeat it
 
 # Out of time 
 (48 hour is not much, but I not want submit in JAM):
-* More sounds (footsteps, zombie hit, zombie dead, player hit, campfire)
-* Whole tutorial "room"
-* More environment props (trunks, stones, flowers)
-* Thirst state, player must drink from well
-* Better balancing (item price, item damage, zombie wave and damage)
+* Sounds for game
+* Much more stations
+* NewYork map after that win ticket to hawai
+* Accident evets, suicide jumper, bomb in the train etc.
 
 
 # How to play ?
-
-* 1) You must watch your stats (power), if your heat or hunger go under 0, you will start dying.
-* 2) Day have 2 minutes, and every night (60 seconds), will come zombies in wave, there are also cold so you need warm with campfire and fight with zombies.
-* 3) For better weapons and tools you must mine stone and wood
-* 4) For decrease hunger, you need pick food from bushes and eat it
-* 5) Every tool and weapon can be upgraded, but you can carry only one so you must switch between them by click on specific item (not just buy it)
+![Image of game](https://raw.githubusercontent.com/hadikcz/LudumDare41_Railgear/master/screenshoots/help.png)
 
 
-# Tools:
-**Pickaxe**:
-Basic tool for quicker mine wood and stone, it can't be use for attack, you will attack as free hand.
+
+# Upgrades:
+You have 3 upgrades with 3 levels.
+**Acceleration**:
+Train will be acceleration very quickly.
+* LEVEL 1 - 2x - $250
+* LEVEL 2 - 2.5x - $500
+* LEVEL 3 - 3.5x - $1000
 
 
-**Knife**:
-First attack weapon, power is poor, but you can survive few nights only with this knife.
 
-**Sword**:
-Advanced weapon for mid game, without upgraded sword, you can't survive for more then 5 days. 
+**Max speed**:
+Limit of max speed
+- LEVEL 0 - 80 km/h
+* LEVEL 1 - 100 km/h - $250
+* LEVEL 2 - 120 km/h - $500
+* LEVEL 3 - 150 km/h - $1000
 
-**Battle axe**:
-This weapon looks so cool, and it's also very powerfull, fully upgraded battle axe will destroy every zombie wave.
+**Breaks**:
+Limit of max speed
+* LEVEL 1 - 2x - $250
+* LEVEL 2 - 3x - $500
+* LEVEL 3 - 5x - $1000
+
+**Hawai ticket**:
+You will buy hotel and ticket to the Hawai and never return (WIN scenerio)
+Price: $10000
 
 Gameplay: https://youtu.be/TIdfBUCN_kg
 
-PLAY: https://hadikcz.github.io/LudumDare39_Last_survivor/
+PLAY: https://hadikcz.github.io/LudumDare41_Railgear/index.html
 
-Source: https://github.com/hadikcz/LudumDare39_Last_survivor
-
-### Running  with Docker
-If you have [Docker](https://www.docker.com/) installed, after cloning the repository you can run the following commands to start the server and make it acessible at `http://localhost:3000`:
-
-```
-sudo git clone https://github.com/hadikcz/LudumDare39_Last_survivor.git &&
-cd LudumDare39_Last_survivor &&
-docker build -t ld39hadik .
-docker run -it -p 3000:3000 ld39hadik
-```
-
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+Source: https://github.com/hadikcz/LudumDare41_Railgear
