@@ -5,7 +5,7 @@ This game was develop only for 48 hours into game jam Ludum Dare (compo) https:/
 
 ## [PLAY ON WEB!](https://hadikcz.github.io/LudumDare41_Railgear/index.html)
 
-![Image of game](https://raw.githubusercontent.com/hadikcz/LudumDare39_Last_survivor/master/preview.gif)
+![Image of game](https://raw.githubusercontent.com/hadikcz/LudumDare41_Railgear/master/preview.gif)
 
 # About game:
 My Second LD entry. Your task is simple, drive metro train and keep schedule. Just drive metro, stop at station, open doors and wait. And repeat it
