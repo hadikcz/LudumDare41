@@ -43,7 +43,7 @@ export default class extends Phaser.State {
         this.game.add.text(this.center.x - 300, this.center.y - 100, 'Acceleration upgrade', style);
         this.accelerationLevel = this.game.add.text(this.center.x - 70, this.center.y - 100, '(' + this.upgrades.accelerationLevel + '/3)', style);
         this.accelerationPrice = this.game.add.text(this.center.x, this.center.y - 100, '$' + config.shop.acceleration[this.upgrades.accelerationLevel], style);
-        let buyButtonAcceleration = this.game.add.button(this.center.x + 130, this.center.y - 90, 'buyButton', () => {
+        let buyButtonAcceleration = this.game.add.button(this.center.x + 130, this.center.y - 90, 'wide_buttons', () => {
             if (this.upgrades.accelerationLevel < 3) {
                 let price = config.shop.acceleration[this.upgrades.accelerationLevel];
                 if (this.canBuy(price)) {
@@ -57,14 +57,17 @@ export default class extends Phaser.State {
                     }
                 }
             }
-        }, this, 0, 0, 1);
+        }, this, 1, 0, 0);
         buyButtonAcceleration.anchor.setTo(0.5);
+        buyButtonAcceleration.scale.setTo(0.7);
+        let buswywsa = this.game.add.text(this.center.x + 130, this.center.y - 90, 'Buy', {fill: 'white', font: '24px Consolas, Arial'});
+        buswywsa.anchor.setTo(0.5);
 
         // max speed
         this.game.add.text(this.center.x - 300, this.center.y - 50, 'Maxspeed uprade', style);
         this.maxSpeedLevel = this.game.add.text(this.center.x - 70, this.center.y - 50, '(' + this.upgrades.maxSpeedLevel + '/3)', style);
         this.maxSpeedLevelPrice = this.game.add.text(this.center.x, this.center.y - 50, '$' + config.shop.maxSpeed[this.upgrades.maxSpeedLevel], style);
-        let buyButtonMaxSpeed = this.game.add.button(this.center.x + 130, this.center.y - 40, 'buyButton', () => {
+        let buyButtonMaxSpeed = this.game.add.button(this.center.x + 130, this.center.y - 40, 'wide_buttons', () => {
             if (this.upgrades.maxSpeedLevel < 3) {
                 let price = config.shop.maxSpeed[this.upgrades.maxSpeedLevel];
                 if (this.canBuy(price)) {
@@ -78,14 +81,17 @@ export default class extends Phaser.State {
                     }
                 }
             }
-        }, this, 0, 0, 1);
+        }, this, 1, 0, 0);
         buyButtonMaxSpeed.anchor.setTo(0.5);
+        buyButtonMaxSpeed.scale.setTo(0.7);
+        let busywsa = this.game.add.text(this.center.x + 130, this.center.y - 40, 'Buy', {fill: 'white', font: '24px Consolas, Arial'});
+        busywsa.anchor.setTo(0.5);
 
         // breaks
         this.game.add.text(this.center.x - 300, this.center.y, 'Breaks uprade', style);
         this.breaksLevel = this.game.add.text(this.center.x - 70, this.center.y, '(' + this.upgrades.breaksLevel + '/3)', style);
         this.breaksLevelPrice = this.game.add.text(this.center.x, this.center.y + 10, '$' + config.shop.breaks[this.upgrades.breaksLevel], style);
-        let buyButtonBreaks = this.game.add.button(this.center.x + 130, this.center.y + 10, 'buyButton', () => {
+        let buyButtonBreaks = this.game.add.button(this.center.x + 130, this.center.y + 10, 'wide_buttons', () => {
             if (this.upgrades.breaksLevel < 3) {
                 let price = config.shop.breaks[this.upgrades.breaksLevel];
                 if (this.canBuy(price)) {
@@ -99,19 +105,25 @@ export default class extends Phaser.State {
                     }
                 }
             }
-        }, this, 0, 0, 1);
+        }, this, 1, 0, 0);
         buyButtonBreaks.anchor.setTo(0.5);
+        buyButtonBreaks.scale.setTo(0.7);
+        let busysa = this.game.add.text(this.center.x + 130, this.center.y + 10, 'Buy', {fill: 'white', font: '24px Consolas, Arial'});
+        busysa.anchor.setTo(0.5);
 
         // buy ticket to hawai
         this.game.add.text(this.center.x - 300, this.center.y + 50, 'Ticket to hawai', style);
 
         this.game.add.text(this.center.x, this.center.y + 50, '$' + config.shop.ticket, style);
-        let buyButtonTicket = this.game.add.button(this.center.x + 130, this.center.y + 60, 'buyButton', () => {
+        let buyButtonTicket = this.game.add.button(this.center.x + 130, this.center.y + 60, 'wide_buttons', () => {
             if (this.canBuy(config.shop.ticket)) {
                 this.state.start('Win');
             }
-        }, this, 0, 0, 1);
+        }, this, 1, 0, 0);
         buyButtonTicket.anchor.setTo(0.5);
+        buyButtonTicket.scale.setTo(0.7);
+        let buysa = this.game.add.text(this.center.x + 130, this.center.y + 60, 'Buy', {fill: 'white', font: '24px Consolas, Arial'});
+        buysa.anchor.setTo(0.5);
 
         // balance icon
         let dolarIcon = this.game.add.image(50, this.center.y + 150, 'icons', 0);

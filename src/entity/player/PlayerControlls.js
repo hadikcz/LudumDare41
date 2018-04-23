@@ -74,11 +74,11 @@ export default class {
         }
 
         // debug - go to shop
-        if (this.game.input.keyboard.isDown(Phaser.Keyboard.S)) {
-            // this.game.state.restart();
-            // this.game.state.clearCurrentState();
-            this.game.state.start('Shop');
-        }
+        // if (this.game.input.keyboard.isDown(Phaser.Keyboard.S)) {
+        //     // this.game.state.restart();
+        //     // this.game.state.clearCurrentState();
+        //     this.game.state.start('Shop');
+        // }
         // if (this.game.input.keyboard.isDown(Phaser.Keyboard.R)) {
         //     window.ui.promptPenality('-$200 You miss station');
         // }
@@ -88,10 +88,10 @@ export default class {
         }
 
         // debug switch camera
-        if (this.game.input.keyboard.isDown(Phaser.Keyboard.R)) {
-            this.player.playerCamera.focusStation();
-        } else if (this.game.input.keyboard.isDown(Phaser.Keyboard.F)) {
-            this.player.playerCamera.focusTrain();
-        }
+        // if (this.game.input.keyboard.isDown(Phaser.Keyboard.R)) {
+        //     this.player.playerCamera.focusStation();
+        // } else if (this.game.input.keyboard.isDown(Phaser.Keyboard.F)) {
+        //     this.player.playerCamera.focusTrain();
+        // }
     }
 }
